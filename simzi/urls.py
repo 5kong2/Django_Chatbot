@@ -4,7 +4,7 @@ from server import views
 
 urlpatterns = [
 	url(r'keyboard/', views.keyboard),
-	url(r'keyboard/', views.message),
-	url(r'keyboard/', views.chat_room),
-	url(r'keyboard/', views.friend),
+	url(r'message/message$', views.message),
+	#url(r'keyboard/', views.chat_room),
+	#url(r'keyboard/', views.friend),
 ]

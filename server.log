@@ -372,3 +372,525 @@ August 02, 2017 - 01:19:06
 Django version 1.11.4, using settings 'simzi.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
+Not Found: /friend/test
+[02/Aug/2017 01:30:17] "DELETE /friend/test HTTP/1.1" 404 2297
+Not Found: /friend
+[02/Aug/2017 01:30:17] "POST /friend HTTP/1.1" 404 2280
+Not Found: /chat_room/test
+[02/Aug/2017 01:30:17] "DELETE /chat_room/test HTTP/1.1" 404 2306
+[02/Aug/2017 01:30:17] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:30:17] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:30:20] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:30:20] "GET /keyboard/ HTTP/1.1" 200 61
+Not Found: /message
+[02/Aug/2017 01:30:22] "POST /message HTTP/1.1" 404 2283
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 02, 2017 - 01:20:50
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 02, 2017 - 01:30:33
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 02, 2017 - 01:30:38
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7efec4bc2d08>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.4/importlib/__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 2254, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 2237, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 2226, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1200, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1129, in _exec
+  File "<frozen importlib._bootstrap>", line 1471, in exec_module
+  File "<frozen importlib._bootstrap>", line 321, in _call_with_frames_removed
+  File "/workspace/simzi/simzi/urls.py", line 3, in <module>
+    from server import views
+  File "/workspace/simzi/server/views.py", line 15, in <module>
+    HttpResponse(json.dumps(dataset, ensure_ascii="False"), content_type="application/json; encoding=utf-8")
+NameError: name 'dataset' is not defined
+Performing system checks...
+
+Not Found: /friend/test
+[02/Aug/2017 01:31:42] "DELETE /friend/test HTTP/1.1" 404 2297
+Not Found: /friend
+[02/Aug/2017 01:31:42] "POST /friend HTTP/1.1" 404 2280
+Not Found: /chat_room/test
+[02/Aug/2017 01:31:42] "DELETE /chat_room/test HTTP/1.1" 404 2306
+[02/Aug/2017 01:31:42] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:31:43] "GET /keyboard/ HTTP/1.1" 200 82
+[02/Aug/2017 01:31:49] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:31:50] "GET /keyboard/ HTTP/1.1" 200 82
+Not Found: /message
+[02/Aug/2017 01:31:51] "POST /message HTTP/1.1" 404 2283
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 02, 2017 - 01:31:42
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 02, 2017 - 01:32:12
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Not Found: /friend/test
+[02/Aug/2017 01:32:27] "DELETE /friend/test HTTP/1.1" 404 2297
+Not Found: /friend
+[02/Aug/2017 01:32:27] "POST /friend HTTP/1.1" 404 2280
+Not Found: /chat_room/test
+[02/Aug/2017 01:32:28] "DELETE /chat_room/test HTTP/1.1" 404 2306
+[02/Aug/2017 01:32:28] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:32:28] "GET /keyboard/ HTTP/1.1" 200 82
+[02/Aug/2017 01:32:30] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:32:30] "GET /keyboard/ HTTP/1.1" 200 82
+Not Found: /message
+[02/Aug/2017 01:32:32] "POST /message HTTP/1.1" 404 2283
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 02, 2017 - 01:32:26
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Not Found: /friend/test
+[02/Aug/2017 01:33:25] "DELETE /friend/test HTTP/1.1" 404 2297
+Not Found: /friend
+[02/Aug/2017 01:33:25] "POST /friend HTTP/1.1" 404 2280
+Not Found: /chat_room/test
+[02/Aug/2017 01:33:25] "DELETE /chat_room/test HTTP/1.1" 404 2306
+[02/Aug/2017 01:33:25] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:33:25] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:33:27] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:33:27] "GET /keyboard/ HTTP/1.1" 200 61
+Not Found: /message
+[02/Aug/2017 01:33:28] "POST /message HTTP/1.1" 404 2283
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 02, 2017 - 01:33:24
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f6084249d08>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.4/importlib/__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 2254, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 2237, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 2226, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1200, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1129, in _exec
+  File "<frozen importlib._bootstrap>", line 1471, in exec_module
+  File "<frozen importlib._bootstrap>", line 321, in _call_with_frames_removed
+  File "/workspace/simzi/simzi/urls.py", line 3, in <module>
+    from server import views
+  File "/workspace/simzi/server/views.py", line 27
+    "keyboard": {
+             ^
+SyntaxError: invalid syntax
+Performing system checks...
+
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7fd7c496bd08>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.4/importlib/__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 2254, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 2237, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 2226, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1200, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1129, in _exec
+  File "<frozen importlib._bootstrap>", line 1471, in exec_module
+  File "<frozen importlib._bootstrap>", line 321, in _call_with_frames_removed
+  File "/workspace/simzi/simzi/urls.py", line 3, in <module>
+    from server import views
+  File "/workspace/simzi/server/views.py", line 27
+    "keyboard": {
+             ^
+SyntaxError: invalid syntax
+Performing system checks...
+
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f8b18e78d08>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.4/importlib/__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 2254, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 2237, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 2226, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1200, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1129, in _exec
+  File "<frozen importlib._bootstrap>", line 1471, in exec_module
+  File "<frozen importlib._bootstrap>", line 321, in _call_with_frames_removed
+  File "/workspace/simzi/simzi/urls.py", line 3, in <module>
+    from server import views
+  File "/workspace/simzi/server/views.py", line 27
+    "keyboard": {
+             ^
+SyntaxError: invalid syntax
+Performing system checks...
+
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f5c02bc0d08>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.4/importlib/__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 2254, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 2237, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 2226, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1200, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1129, in _exec
+  File "<frozen importlib._bootstrap>", line 1471, in exec_module
+  File "<frozen importlib._bootstrap>", line 321, in _call_with_frames_removed
+  File "/workspace/simzi/simzi/urls.py", line 3, in <module>
+    from server import views
+  File "/workspace/simzi/server/views.py", line 27
+    "keyboard": {
+             ^
+SyntaxError: invalid syntax
+Performing system checks...
+
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f1230339d08>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.4/importlib/__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 2254, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 2237, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 2226, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1200, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1129, in _exec
+  File "<frozen importlib._bootstrap>", line 1471, in exec_module
+  File "<frozen importlib._bootstrap>", line 321, in _call_with_frames_removed
+  File "/workspace/simzi/simzi/urls.py", line 3, in <module>
+    from server import views
+  File "/workspace/simzi/server/views.py", line 27
+    "keyboard": {
+             ^
+SyntaxError: invalid syntax
+Performing system checks...
+
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7fdd8d21dd08>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.4/importlib/__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 2254, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 2237, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 2226, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1200, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1129, in _exec
+  File "<frozen importlib._bootstrap>", line 1471, in exec_module
+  File "<frozen importlib._bootstrap>", line 321, in _call_with_frames_removed
+  File "/workspace/simzi/simzi/urls.py", line 3, in <module>
+    from server import views
+  File "/workspace/simzi/server/views.py", line 27
+    "keyboard": {
+             ^
+SyntaxError: invalid syntax
+Performing system checks...
+
+Not Found: /
+[02/Aug/2017 01:36:53] "GET / HTTP/1.1" 404 2024
+[02/Aug/2017 01:37:01] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:37:01] "GET /keyboard/ HTTP/1.1" 200 61
+Internal Server Error: /message
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.4/dist-packages/django/utils/deprecation.py", line 138, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.4/dist-packages/django/middleware/common.py", line 63, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/usr/local/lib/python3.4/dist-packages/django/middleware/common.py", line 101, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to simzi.run.goorm.io/message/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[02/Aug/2017 01:37:03] "POST /message HTTP/1.1" 500 60638
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 02, 2017 - 01:36:53
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 02, 2017 - 01:38:16
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Not Found: /keyboard
+[02/Aug/2017 01:38:31] "GET /keyboard HTTP/1.1" 404 2084
+Not Found: /keyboard
+[02/Aug/2017 01:38:37] "GET /keyboard HTTP/1.1" 404 2084
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 02, 2017 - 01:38:25
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Not Found: /chat_room/test
+[02/Aug/2017 01:38:42] "DELETE /chat_room/test HTTP/1.1" 404 2105
+Not Found: /keyboard
+[02/Aug/2017 01:38:42] "GET /keyboard HTTP/1.1" 404 2084
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 02, 2017 - 01:38:42
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 02, 2017 - 01:38:51
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Not Found: /friend/test
+[02/Aug/2017 01:39:01] "DELETE /friend/test HTTP/1.1" 404 2095
+Not Found: /friend
+[02/Aug/2017 01:39:01] "POST /friend HTTP/1.1" 404 2078
+Not Found: /chat_room/test
+[02/Aug/2017 01:39:01] "DELETE /chat_room/test HTTP/1.1" 404 2104
+Not Found: /keyboard
+[02/Aug/2017 01:39:01] "GET /keyboard HTTP/1.1" 404 2083
+Not Found: /friend/test
+[02/Aug/2017 01:39:02] "DELETE /friend/test HTTP/1.1" 404 2095
+Not Found: /friend
+[02/Aug/2017 01:39:02] "POST /friend HTTP/1.1" 404 2078
+Not Found: /chat_room/test
+[02/Aug/2017 01:39:02] "DELETE /chat_room/test HTTP/1.1" 404 2104
+Not Found: /keyboard
+[02/Aug/2017 01:39:02] "GET /keyboard HTTP/1.1" 404 2083
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 02, 2017 - 01:39:00
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Not Found: /friend/test
+[02/Aug/2017 01:39:08] "DELETE /friend/test HTTP/1.1" 404 2087
+Not Found: /friend
+[02/Aug/2017 01:39:09] "POST /friend HTTP/1.1" 404 2070
+Not Found: /chat_room/test
+[02/Aug/2017 01:39:09] "DELETE /chat_room/test HTTP/1.1" 404 2096
+[02/Aug/2017 01:39:09] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:39:09] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:39:13] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:39:13] "GET /keyboard/ HTTP/1.1" 200 61
+Not Found: /message
+[02/Aug/2017 01:39:15] "POST /message HTTP/1.1" 404 2073
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 02, 2017 - 01:39:07
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Not Found: /friend/test
+[02/Aug/2017 01:39:44] "DELETE /friend/test HTTP/1.1" 404 2086
+Not Found: /friend
+[02/Aug/2017 01:39:44] "POST /friend HTTP/1.1" 404 2069
+Not Found: /chat_room/test
+[02/Aug/2017 01:39:44] "DELETE /chat_room/test HTTP/1.1" 404 2095
+[02/Aug/2017 01:39:44] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:39:44] "GET /keyboard/ HTTP/1.1" 200 61
+Not Found: /message
+[02/Aug/2017 01:39:48] "POST /message HTTP/1.1" 404 2072
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 02, 2017 - 01:39:42
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 02, 2017 - 01:39:56
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
