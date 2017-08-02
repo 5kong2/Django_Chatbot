@@ -17,14 +17,14 @@ def keyboard(request):
 @csrf_exempt
 def message(request):
 	
-	message = ((request.body).decode("utf-8"))
-	return_json_str = json.loads(message)
-	return_str = return_json_str["content"]
+	body_unicode = request.body.decode('utf-8')
+	body = json.loads(body_unicode)
+	content = body['content']
 	
-	if return_str == u"강다니엘":
+	if content == u"강다니엘":
 		data = {	
 			"message": {
-				"text": "녤~",
+				"text": content+" Pick!",
 				"photo": {
 					"url": "http://post.phinf.naver.net/MjAxNzA2MThfMTQ5/MDAxNDk3NzYwMTQ3Njcx.g5Yh4qZM5d-IsFLqUJIAk2ICGdugE-QWTgk298e_-G4g.VnXqA8m4GMeMKAvQ7ACrP-K9sGJ_4hazfCev3uQA09Ag.JPEG/IibflNMZDZF3xlkrIWObOayz6FEI.jpg",
 					"width": 850,
@@ -40,10 +40,10 @@ def message(request):
 				"buttons": ["강다니엘", "옹성우", "메인으루"]
 			}
 		}
-	elif return_str == u"옹성우":
+	elif content == u"옹성우":
 		data = {		
 			"message": {
-				"text": "옹~",
+				"text": content+" Pick!",
 				"photo": {
 					"url": "http://cafefiles.naver.net/MjAxNzA3MDJfNzcg/MDAxNDk4OTI3NjQ4OTU0.-rtgs90xqWUjg5bROJkGd2MrZiyFKDVO6WD3hj2gQtUg.a9lofCKrWC1QekHdldeeR47_iUzN0lTLXw9g-UHaHvEg.JPEG.jeonginhye06/externalFile.jpg",
 					"width": 960,
@@ -62,7 +62,7 @@ def message(request):
 	else:
 		data = {
 			"message": {
-				"text" : "아오"
+				"text" : content
 			},
 			"keyboard": {
 				"type": "buttons",
