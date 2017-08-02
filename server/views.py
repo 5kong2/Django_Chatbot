@@ -8,7 +8,7 @@ from django.views.decorators.csrf import csrf_exempt
 def keyboard(request):
 	data = {
 		"type": "buttons",
-		"buttons": ["제발좀", "돼라ㅅㅂ"]
+		"buttons": ["제발!!!!!!", "앙앙아ㅏ악"]
 	}
 
 	return HttpResponse(json.dumps(data, ensure_ascii=False), content_type="application/json; encoding=utf-8")
@@ -19,7 +19,7 @@ def message(request):
 	data = {
 		"message": {
 			"text": "을 선택하셨습니다."
-		},		
+		},
 		"keyboard": {
 			"type": "buttons",
 			"buttons": ["이전으로 돌아가기"]
@@ -27,3 +27,21 @@ def message(request):
 	}
 	
 	return HttpResponse(json.dumps(data, ensure_ascii=False), content_type="application/json; encoding=utf-8")
+
+def chat_room(request):
+	data = {
+		'message': {
+			'text': 'test'
+		}
+	}
+	
+	return HttpResponse(json.dumps(data, ensure_ascii=False), content_type='application/json; encoding=utf-8')
+
+def friend(request):
+	data = {
+		'message': {
+			'text': 'test'
+		}
+	}
+
+	return HttpResponse(json.dumps(data, ensure_ascii=False), content_type='application/json; encoding=utf-8')
