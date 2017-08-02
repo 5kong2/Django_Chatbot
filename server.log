@@ -1,0 +1,360 @@
+Not Found: /
+[02/Aug/2017 01:13:32] "GET / HTTP/1.1" 404 2277
+Not Found: /friend/test
+[02/Aug/2017 01:13:35] "DELETE /friend/test HTTP/1.1" 404 2331
+Not Found: /friend
+[02/Aug/2017 01:13:35] "POST /friend HTTP/1.1" 404 2314
+Not Found: /chat_room/test
+[02/Aug/2017 01:13:35] "DELETE /chat_room/test HTTP/1.1" 404 2340
+Not Found: /keyboard
+[02/Aug/2017 01:13:35] "GET /keyboard HTTP/1.1" 404 2319
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 02, 2017 - 01:13:28
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Not Found: /friend/test
+[02/Aug/2017 01:14:13] "DELETE /friend/test HTTP/1.1" 404 2331
+Not Found: /friend
+[02/Aug/2017 01:14:13] "POST /friend HTTP/1.1" 404 2314
+Not Found: /chat_room/test
+[02/Aug/2017 01:14:13] "DELETE /chat_room/test HTTP/1.1" 404 2340
+Not Found: /keyboard
+[02/Aug/2017 01:14:13] "GET /keyboard HTTP/1.1" 404 2319
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 02, 2017 - 01:14:12
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Not Found: /friend/test
+[02/Aug/2017 01:14:42] "DELETE /friend/test HTTP/1.1" 404 2322
+Not Found: /friend
+[02/Aug/2017 01:14:42] "POST /friend HTTP/1.1" 404 2305
+Not Found: /chat_room/test
+[02/Aug/2017 01:14:42] "DELETE /chat_room/test HTTP/1.1" 404 2331
+[02/Aug/2017 01:14:42] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:14:42] "GET /keyboard/ HTTP/1.1" 200 77
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 02, 2017 - 01:14:36
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Not Found: /chat_room/test
+[02/Aug/2017 01:14:58] "DELETE /chat_room/test HTTP/1.1" 404 2306
+[02/Aug/2017 01:14:58] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:14:58] "GET /keyboard/ HTTP/1.1" 200 77
+Not Found: /friend/test
+[02/Aug/2017 01:15:11] "DELETE /friend/test HTTP/1.1" 404 2297
+Not Found: /friend
+[02/Aug/2017 01:15:12] "POST /friend HTTP/1.1" 404 2280
+Not Found: /chat_room/test
+[02/Aug/2017 01:15:12] "DELETE /chat_room/test HTTP/1.1" 404 2306
+[02/Aug/2017 01:15:12] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:15:12] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:15:29] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:15:29] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:15:29] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:15:29] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:15:29] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:15:29] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:15:29] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:15:29] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:15:29] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:15:29] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:15:29] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:15:29] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:15:29] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:15:29] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:15:29] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:15:29] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:15:29] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:15:29] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:15:29] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:15:29] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:15:29] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:15:29] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:15:29] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:15:29] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:15:29] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:15:29] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:15:29] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:15:29] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:15:29] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:15:29] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:15:29] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:15:29] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:15:29] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:15:29] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:15:29] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:15:29] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:15:29] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:15:29] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:15:29] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:15:29] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:15:29] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:15:29] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:15:29] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:15:29] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:15:29] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:15:29] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:15:29] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:15:29] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:15:29] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:15:29] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:15:29] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:15:29] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:15:29] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:15:29] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:15:29] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:15:29] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:15:29] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:15:29] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:15:29] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:15:29] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:15:29] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:15:29] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:15:29] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:15:29] "GET /keyboard/ HTTP/1.1" 200 77
+Not Found: /message
+[02/Aug/2017 01:15:39] "POST /message HTTP/1.1" 404 2283
+[02/Aug/2017 01:16:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:15] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:16:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:15] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:16:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:15] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:16:15] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:16:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:15] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:16:15] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:16:15] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:16:15] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:16:15] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:16:15] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:16:15] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:16:15] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:16:15] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:16:15] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:16:15] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:16:15] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:16:15] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:16:15] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:16:15] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:16:15] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:16:15] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:16:15] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:16:15] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:16:15] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:16:15] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:16:15] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:16:15] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:16:15] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:16:15] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:16:15] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:16:15] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:16:15] "GET /keyboard/ HTTP/1.1" 200 77
+[02/Aug/2017 01:16:15] "GET /keyboard/ HTTP/1.1" 200 77
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 02, 2017 - 01:14:58
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Not Found: /friend
+[02/Aug/2017 01:16:27] "POST /friend HTTP/1.1" 404 2280
+Not Found: /chat_room/test
+[02/Aug/2017 01:16:27] "DELETE /chat_room/test HTTP/1.1" 404 2306
+[02/Aug/2017 01:16:27] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:27] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:16:47] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:47] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:47] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:47] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:47] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:47] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:47] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:47] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:47] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:47] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:47] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:47] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:47] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:47] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:47] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:47] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:47] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:47] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:47] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:47] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:47] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:47] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:47] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:47] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:47] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:47] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:47] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:47] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:47] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:47] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:47] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:47] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:16:47] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:16:47] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:16:47] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:16:47] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:16:47] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:16:47] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:16:47] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:16:47] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:16:47] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:16:47] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:16:47] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:16:47] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:16:47] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:16:47] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:16:47] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:16:47] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:16:47] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:16:47] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:16:47] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:16:47] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:16:47] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:16:47] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:16:47] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:16:47] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:16:47] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:16:47] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:16:47] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:16:47] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:16:47] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:16:47] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:16:47] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:16:47] "GET /keyboard/ HTTP/1.1" 200 61
+Not Found: /message
+[02/Aug/2017 01:16:51] "POST /message HTTP/1.1" 404 2283
+[02/Aug/2017 01:17:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:17:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:17:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:17:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:17:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:17:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:17:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:17:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:17:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:17:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:17:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:17:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:17:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:17:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:17:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:17:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:17:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:17:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:17:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:17:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:17:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:17:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:17:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:17:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:17:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:17:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:17:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:17:15] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:17:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:17:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:17:15] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:17:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:17:15] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:17:15] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:17:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:17:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:17:15] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:17:15] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:17:15] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:17:15] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:17:15] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:17:15] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:17:15] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:17:15] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:17:15] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:17:15] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:17:15] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:17:15] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:17:15] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:17:15] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:17:15] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:17:15] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:17:15] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:17:15] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:17:15] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:17:15] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:17:15] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:17:15] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:17:15] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:17:15] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:17:15] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:17:15] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:17:15] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:17:15] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:17:15] "GET /keyboard/ HTTP/1.1" 200 61
+[02/Aug/2017 01:17:15] "GET /keyboard/ HTTP/1.1" 200 61
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 02, 2017 - 01:16:27
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Not Found: /friend/test
+[02/Aug/2017 01:17:49] "DELETE /friend/test HTTP/1.1" 404 2297
+Not Found: /friend
+[02/Aug/2017 01:17:49] "POST /friend HTTP/1.1" 404 2280
+Not Found: /chat_room/test
+[02/Aug/2017 01:17:49] "DELETE /chat_room/test HTTP/1.1" 404 2306
+[02/Aug/2017 01:17:49] "GET /keyboard HTTP/1.1" 301 0
+[02/Aug/2017 01:17:49] "GET /keyboard/ HTTP/1.1" 200 61
+Not Found: /message
+[02/Aug/2017 01:17:54] "POST /message HTTP/1.1" 404 2283
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 02, 2017 - 01:17:46
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
