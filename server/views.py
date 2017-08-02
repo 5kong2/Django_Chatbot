@@ -10,7 +10,7 @@ def keyboard(request):
 		"type": "buttons",
 		"buttons": ["제발좀", "돼라ㅅㅂ"]
 	}
-	
+
 	return HttpResponse(json.dumps(data, ensure_ascii=False), content_type="application/json; encoding=utf-8")
 
 
