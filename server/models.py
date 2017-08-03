@@ -1,11 +1,12 @@
 from django.db import models
+from django.core.validators import URLValidator
 
 # Create your models here.
 class Member(models.Model):
-	name = models.CharField(max_length=9, default="강다니엘")
+	name = models.CharField(max_length=9, default="")
 	rank = models.IntegerField(default = 1)
-	position = models.CharField(max_length=60, default="센터")
-	
+	nickname =models.CharField(max_length=9, default="")
+	url = models.TextField(validators=[URLValidator()], default="")
 	
 	def __str__(self):
 		return self.name

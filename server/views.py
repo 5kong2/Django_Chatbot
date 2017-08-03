@@ -5,7 +5,7 @@ from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 from server.models import Member
 
-# Create your views here.
+#bottons을 string으로 변환
 def content(request):
 	body_unicode = request.body.decode('utf-8')
 	body = json.loads(body_unicode)
@@ -13,10 +13,11 @@ def content(request):
 	return content
 
 
+#첫 진입 시 보여지는 버튼
 def keyboard(request):
 	data = {
 		"type": "buttons",
-		"buttons": ["강다니엘", "옹성우", "워너원"]
+		"buttons": ["강다니엘", "옹성우", "황민현", "김재환"]
 	}
 	
 	return HttpResponse(json.dumps(data, ensure_ascii=False), content_type="application/json; encoding=utf-8")
@@ -33,7 +34,7 @@ def message(request):
 			},
 			"keyboard": {
 				"type": "buttons",
-				"buttons": ["강다니엘", "옹성우", "워너원"]
+				"buttons": ["강다니엘", "옹성우", "황민현", "김재환"]
 			}
 		}
 	else:
@@ -46,20 +47,15 @@ def form(request):
 	content_str = content(request)
 	member = Member.objects.get(name=content_str)
 	
-	if content_str == member.name:
-		add_str = "You picked "
-		rank = member.rank
-	else:
-		add_str = "All I Wanna Do! "
 	return	{"message": {
-				"text" : add_str + content_str + str(rank),
+				"text" : "You picked "+content_str+"("+member.nickname+")"+"\nRank "+ str(member.rank),
 				"message_button": {
 					"label": "WANNAONE GO!",
-					"url": "http://www.wannaonego.com"
+					"url": member.url
 				}
 			},
 			"keyboard": {
 				"type": "buttons",
-				"buttons": ["강다니엘", "옹성우", "워너원", "처음으로"]
+				"buttons": ["강다니엘", "옹성우", "황민현", "김재환", "처음으로"]
 			}
 			}

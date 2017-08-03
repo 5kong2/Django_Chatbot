@@ -1,146 +1,206 @@
 Not Found: /friend/test
-[03/Aug/2017 03:34:30] "DELETE /friend/test HTTP/1.1" 404 2076
+[03/Aug/2017 06:01:03] "DELETE /friend/test HTTP/1.1" 404 2076
 Not Found: /friend
-[03/Aug/2017 03:34:30] "POST /friend HTTP/1.1" 404 2059
+[03/Aug/2017 06:01:03] "POST /friend HTTP/1.1" 404 2059
 Not Found: /chat_room/test
-[03/Aug/2017 03:34:30] "DELETE /chat_room/test HTTP/1.1" 404 2085
-[03/Aug/2017 03:34:31] "GET /keyboard HTTP/1.1" 200 74
+[03/Aug/2017 06:01:04] "DELETE /chat_room/test HTTP/1.1" 404 2085
+[03/Aug/2017 06:01:04] "GET /keyboard HTTP/1.1" 200 87
+[03/Aug/2017 06:01:07] "GET /keyboard HTTP/1.1" 200 87
+[03/Aug/2017 06:01:10] "POST /message HTTP/1.1" 200 141
 Performing system checks...
 
 System check identified no issues (0 silenced).
-August 03, 2017 - 03:34:30
+August 03, 2017 - 06:01:01
 Django version 1.11.4, using settings 'simzi.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
 Not Found: /friend/test
-[03/Aug/2017 03:34:48] "DELETE /friend/test HTTP/1.1" 404 2076
+[03/Aug/2017 06:01:25] "DELETE /friend/test HTTP/1.1" 404 2076
 Not Found: /friend
-[03/Aug/2017 03:34:48] "POST /friend HTTP/1.1" 404 2059
+[03/Aug/2017 06:01:25] "POST /friend HTTP/1.1" 404 2059
 Not Found: /chat_room/test
-[03/Aug/2017 03:34:49] "DELETE /chat_room/test HTTP/1.1" 404 2085
-[03/Aug/2017 03:34:49] "GET /keyboard HTTP/1.1" 200 74
-[03/Aug/2017 03:34:55] "GET /keyboard HTTP/1.1" 200 74
-[03/Aug/2017 03:34:57] "POST /message HTTP/1.1" 200 233
-[03/Aug/2017 03:34:58] "POST /message HTTP/1.1" 200 230
-[03/Aug/2017 03:34:59] "POST /message HTTP/1.1" 200 235
-[03/Aug/2017 03:35:01] "POST /message HTTP/1.1" 200 165
-[03/Aug/2017 03:35:03] "POST /message HTTP/1.1" 200 233
+[03/Aug/2017 06:01:25] "DELETE /chat_room/test HTTP/1.1" 404 2085
+[03/Aug/2017 06:01:25] "GET /keyboard HTTP/1.1" 200 87
+[03/Aug/2017 06:01:27] "GET /keyboard HTTP/1.1" 200 87
+Internal Server Error: /message
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/workspace/simzi/server/views.py", line 40, in message
+    data = form(request)
+  File "/workspace/simzi/server/views.py", line 53, in form
+    "text" : "You picked " +content_str+"("+nickname+")"+"\nRank "+ str(rank),
+NameError: name 'nickname' is not defined
+[03/Aug/2017 06:01:29] "POST /message HTTP/1.1" 500 68786
 Performing system checks...
 
 System check identified no issues (0 silenced).
-August 03, 2017 - 03:34:48
+August 03, 2017 - 06:01:20
 Django version 1.11.4, using settings 'simzi.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
-[03/Aug/2017 03:35:34] "POST /message HTTP/1.1" 200 233
-[03/Aug/2017 03:35:36] "POST /message HTTP/1.1" 200 230
-[03/Aug/2017 03:36:38] "POST /message HTTP/1.1" 200 233
-[03/Aug/2017 03:36:40] "POST /message HTTP/1.1" 200 230
+Internal Server Error: /message
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/workspace/simzi/server/views.py", line 40, in message
+    data = form(request)
+  File "/workspace/simzi/server/views.py", line 53, in form
+    "text" : "You picked " +content_str+"("+nickname+")"+"\nRank "+ str(rank),
+NameError: name 'nickname' is not defined
+[03/Aug/2017 06:01:57] "POST /message HTTP/1.1" 500 68787
 Performing system checks...
 
 System check identified no issues (0 silenced).
-August 03, 2017 - 03:35:33
+August 03, 2017 - 06:01:52
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[03/Aug/2017 06:02:18] "GET /keyboard HTTP/1.1" 200 87
+[03/Aug/2017 06:02:20] "POST /message HTTP/1.1" 200 168
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 03, 2017 - 06:02:14
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[03/Aug/2017 06:02:32] "GET /keyboard HTTP/1.1" 200 87
+Internal Server Error: /message
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/workspace/simzi/server/views.py", line 40, in message
+    data = form(request)
+  File "/workspace/simzi/server/views.py", line 50, in form
+    url = mamber.url
+NameError: name 'mamber' is not defined
+[03/Aug/2017 06:02:34] "POST /message HTTP/1.1" 500 68815
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 03, 2017 - 06:02:29
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[03/Aug/2017 06:02:40] "GET /keyboard HTTP/1.1" 200 87
+Internal Server Error: /message
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/workspace/simzi/server/views.py", line 40, in message
+    data = form(request)
+  File "/workspace/simzi/server/views.py", line 50, in form
+    url = mamber.url
+NameError: name 'mamber' is not defined
+[03/Aug/2017 06:02:42] "POST /message HTTP/1.1" 500 68816
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 03, 2017 - 06:02:39
 Django version 1.11.4, using settings 'simzi.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
 Performing system checks...
 
 System check identified no issues (0 silenced).
-August 03, 2017 - 03:36:42
+August 03, 2017 - 06:02:56
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[03/Aug/2017 06:03:00] "GET /keyboard HTTP/1.1" 200 87
+[03/Aug/2017 06:03:02] "POST /message HTTP/1.1" 200 245
+[03/Aug/2017 06:03:55] "GET /keyboard HTTP/1.1" 200 87
+[03/Aug/2017 06:03:57] "POST /message HTTP/1.1" 200 248
+[03/Aug/2017 06:03:58] "POST /message HTTP/1.1" 200 242
+[03/Aug/2017 06:04:00] "POST /message HTTP/1.1" 200 245
+[03/Aug/2017 06:04:01] "POST /message HTTP/1.1" 200 178
+[03/Aug/2017 06:04:04] "POST /message HTTP/1.1" 200 248
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 03, 2017 - 06:03:00
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 03, 2017 - 06:04:18
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[03/Aug/2017 06:04:32] "GET /keyboard HTTP/1.1" 200 87
+[03/Aug/2017 06:04:34] "POST /message HTTP/1.1" 200 258
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 03, 2017 - 06:04:32
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 03, 2017 - 06:04:58
 Django version 1.11.4, using settings 'simzi.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
 Not Found: /friend/test
-[03/Aug/2017 03:36:53] "DELETE /friend/test HTTP/1.1" 404 2076
+[03/Aug/2017 06:05:04] "DELETE /friend/test HTTP/1.1" 404 2076
 Not Found: /friend
-[03/Aug/2017 03:36:53] "POST /friend HTTP/1.1" 404 2059
+[03/Aug/2017 06:05:04] "POST /friend HTTP/1.1" 404 2059
 Not Found: /chat_room/test
-[03/Aug/2017 03:36:53] "DELETE /chat_room/test HTTP/1.1" 404 2085
-[03/Aug/2017 03:36:53] "GET /keyboard HTTP/1.1" 200 74
-[03/Aug/2017 03:37:36] "GET /keyboard HTTP/1.1" 200 74
-[03/Aug/2017 03:37:37] "POST /message HTTP/1.1" 200 233
-[03/Aug/2017 03:37:38] "POST /message HTTP/1.1" 200 230
-[03/Aug/2017 03:37:39] "POST /message HTTP/1.1" 200 235
+[03/Aug/2017 06:05:04] "DELETE /chat_room/test HTTP/1.1" 404 2085
+[03/Aug/2017 06:05:04] "GET /keyboard HTTP/1.1" 200 87
+[03/Aug/2017 06:05:06] "GET /keyboard HTTP/1.1" 200 87
+[03/Aug/2017 06:05:08] "POST /message HTTP/1.1" 200 258
 Performing system checks...
 
 System check identified no issues (0 silenced).
-August 03, 2017 - 03:36:49
+August 03, 2017 - 06:05:04
 Django version 1.11.4, using settings 'simzi.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
 Performing system checks...
 
 System check identified no issues (0 silenced).
-August 03, 2017 - 03:38:20
+August 03, 2017 - 06:05:23
 Django version 1.11.4, using settings 'simzi.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
 Performing system checks...
 
 System check identified no issues (0 silenced).
-August 03, 2017 - 03:38:59
+August 03, 2017 - 06:05:28
 Django version 1.11.4, using settings 'simzi.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 03:39:18
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-[03/Aug/2017 03:43:10] "GET /keyboard HTTP/1.1" 200 74
-[03/Aug/2017 03:43:12] "POST /message HTTP/1.1" 200 233
-[03/Aug/2017 03:43:14] "POST /message HTTP/1.1" 200 230
-[03/Aug/2017 03:43:15] "POST /message HTTP/1.1" 200 235
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 03:43:08
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-[03/Aug/2017 03:43:32] "POST /message HTTP/1.1" 200 233
-Not Found: /friend/test
-[03/Aug/2017 03:43:35] "DELETE /friend/test HTTP/1.1" 404 2076
-Not Found: /friend
-[03/Aug/2017 03:43:35] "POST /friend HTTP/1.1" 404 2059
-Not Found: /chat_room/test
-[03/Aug/2017 03:43:35] "DELETE /chat_room/test HTTP/1.1" 404 2085
-[03/Aug/2017 03:43:35] "GET /keyboard HTTP/1.1" 200 74
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 03:43:20
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 03:43:42
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-[03/Aug/2017 03:45:04] "POST /message HTTP/1.1" 200 230
-[03/Aug/2017 03:45:05] "POST /message HTTP/1.1" 200 253
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 03:45:03
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-[03/Aug/2017 03:46:02] "POST /message HTTP/1.1" 200 253
-[03/Aug/2017 03:54:15] "POST /message HTTP/1.1" 200 253
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 03:46:00
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f6d55e0e048>
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f4ebfa9c0d0>
 Traceback (most recent call last):
   File "/usr/local/lib/python3.4/dist-packages/django/utils/autoreload.py", line 228, in wrapper
     fn(*args, **kwargs)
@@ -177,378 +237,37 @@ Traceback (most recent call last):
   File "<frozen importlib._bootstrap>", line 321, in _call_with_frames_removed
   File "/workspace/simzi/simzi/urls.py", line 3, in <module>
     from server import views
-  File "/workspace/simzi/server/views.py", line 46
-    def 
-       ^
+  File "/workspace/simzi/server/views.py", line 53
+    "text" : "You picked " +member.+"("+member.nickname+")"+"\nRank "+ str(member.rank),
+                                   ^
 SyntaxError: invalid syntax
 Performing system checks...
 
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 03:55:18
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 03:55:59
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 03:56:10
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 03:56:15
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 03:56:29
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f47ecd28048>
+[03/Aug/2017 06:05:52] "GET /keyboard HTTP/1.1" 200 87
+Internal Server Error: /message
 Traceback (most recent call last):
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/autoreload.py", line 228, in wrapper
-    fn(*args, **kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/commands/runserver.py", line 125, in inner_run
-    self.check(display_num_errors=True)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 359, in check
-    include_deployment_checks=include_deployment_checks,
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 346, in _run_checks
-    return checks.run_checks(**kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/registry.py", line 81, in run_checks
-    new_errors = check(app_configs=app_configs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 16, in check_url_config
-    return check_resolver(resolver)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 26, in check_resolver
-    return check_method()
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 254, in check
-    for pattern in self.url_patterns:
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 405, in url_patterns
-    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 398, in urlconf_module
-    return import_module(self.urlconf_name)
-  File "/usr/lib/python3.4/importlib/__init__.py", line 109, in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-  File "<frozen importlib._bootstrap>", line 2254, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 2237, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 2226, in _find_and_load_unlocked
-  File "<frozen importlib._bootstrap>", line 1200, in _load_unlocked
-  File "<frozen importlib._bootstrap>", line 1129, in _exec
-  File "<frozen importlib._bootstrap>", line 1471, in exec_module
-  File "<frozen importlib._bootstrap>", line 321, in _call_with_frames_removed
-  File "/workspace/simzi/simzi/urls.py", line 3, in <module>
-    from server import views
-  File "/workspace/simzi/server/views.py", line 48
-    if content_str ==
-                    ^
-SyntaxError: invalid syntax
-Performing system checks...
-
-Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f02803de048>
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/autoreload.py", line 228, in wrapper
-    fn(*args, **kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/commands/runserver.py", line 125, in inner_run
-    self.check(display_num_errors=True)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 359, in check
-    include_deployment_checks=include_deployment_checks,
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 346, in _run_checks
-    return checks.run_checks(**kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/registry.py", line 81, in run_checks
-    new_errors = check(app_configs=app_configs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 16, in check_url_config
-    return check_resolver(resolver)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 26, in check_resolver
-    return check_method()
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 254, in check
-    for pattern in self.url_patterns:
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 405, in url_patterns
-    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 398, in urlconf_module
-    return import_module(self.urlconf_name)
-  File "/usr/lib/python3.4/importlib/__init__.py", line 109, in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-  File "<frozen importlib._bootstrap>", line 2254, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 2237, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 2226, in _find_and_load_unlocked
-  File "<frozen importlib._bootstrap>", line 1200, in _load_unlocked
-  File "<frozen importlib._bootstrap>", line 1129, in _exec
-  File "<frozen importlib._bootstrap>", line 1471, in exec_module
-  File "<frozen importlib._bootstrap>", line 321, in _call_with_frames_removed
-  File "/workspace/simzi/simzi/urls.py", line 3, in <module>
-    from server import views
-  File "/workspace/simzi/server/views.py", line 51
-    def wannaone(request):
-    ^
-IndentationError: expected an indented block
-Performing system checks...
-
-Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f81b3545048>
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/autoreload.py", line 228, in wrapper
-    fn(*args, **kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/commands/runserver.py", line 125, in inner_run
-    self.check(display_num_errors=True)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 359, in check
-    include_deployment_checks=include_deployment_checks,
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 346, in _run_checks
-    return checks.run_checks(**kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/registry.py", line 81, in run_checks
-    new_errors = check(app_configs=app_configs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 16, in check_url_config
-    return check_resolver(resolver)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 26, in check_resolver
-    return check_method()
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 254, in check
-    for pattern in self.url_patterns:
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 405, in url_patterns
-    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 398, in urlconf_module
-    return import_module(self.urlconf_name)
-  File "/usr/lib/python3.4/importlib/__init__.py", line 109, in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-  File "<frozen importlib._bootstrap>", line 2254, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 2237, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 2226, in _find_and_load_unlocked
-  File "<frozen importlib._bootstrap>", line 1200, in _load_unlocked
-  File "<frozen importlib._bootstrap>", line 1129, in _exec
-  File "<frozen importlib._bootstrap>", line 1471, in exec_module
-  File "<frozen importlib._bootstrap>", line 321, in _call_with_frames_removed
-  File "/workspace/simzi/simzi/urls.py", line 3, in <module>
-    from server import views
-  File "/workspace/simzi/server/views.py", line 51
-    def wannaone(request):
-    ^
-IndentationError: expected an indented block
-Performing system checks...
-
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 03:57:31
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f182385f048>
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/autoreload.py", line 228, in wrapper
-    fn(*args, **kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/commands/runserver.py", line 125, in inner_run
-    self.check(display_num_errors=True)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 359, in check
-    include_deployment_checks=include_deployment_checks,
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 346, in _run_checks
-    return checks.run_checks(**kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/registry.py", line 81, in run_checks
-    new_errors = check(app_configs=app_configs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 16, in check_url_config
-    return check_resolver(resolver)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 26, in check_resolver
-    return check_method()
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 254, in check
-    for pattern in self.url_patterns:
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 405, in url_patterns
-    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 398, in urlconf_module
-    return import_module(self.urlconf_name)
-  File "/usr/lib/python3.4/importlib/__init__.py", line 109, in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-  File "<frozen importlib._bootstrap>", line 2254, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 2237, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 2226, in _find_and_load_unlocked
-  File "<frozen importlib._bootstrap>", line 1200, in _load_unlocked
-  File "<frozen importlib._bootstrap>", line 1129, in _exec
-  File "<frozen importlib._bootstrap>", line 1471, in exec_module
-  File "<frozen importlib._bootstrap>", line 321, in _call_with_frames_removed
-  File "/workspace/simzi/simzi/urls.py", line 3, in <module>
-    from server import views
-  File "/workspace/simzi/server/views.py", line 53
-    def wannaone(request):
-    ^
-IndentationError: expected an indented block
-Performing system checks...
-
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 03:57:53
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 03:58:01
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 03:58:11
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 03:58:18
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-[03/Aug/2017 03:58:48] "GET /keyboard HTTP/1.1" 200 74
-[03/Aug/2017 03:58:49] "POST /message HTTP/1.1" 200 253
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 03:58:42
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
+  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/workspace/simzi/server/views.py", line 40, in message
+    data = form(request)
+  File "/workspace/simzi/server/views.py", line 50, in form
+    "text" : "You picked " +content_str+"("+member.nickname+")"+"\nRank "+ str(member.rank),
+NameError: name 'ᅳ드ᅲᄃᄀ' is not defined
+[03/Aug/2017 06:05:54] "POST /message HTTP/1.1" 500 68636
 Not Found: /friend/test
-[03/Aug/2017 03:59:13] "DELETE /friend/test HTTP/1.1" 404 2076
+[03/Aug/2017 06:05:58] "DELETE /friend/test HTTP/1.1" 404 2076
 Not Found: /friend
-[03/Aug/2017 03:59:13] "POST /friend HTTP/1.1" 404 2059
+[03/Aug/2017 06:05:58] "POST /friend HTTP/1.1" 404 2059
 Not Found: /chat_room/test
-[03/Aug/2017 03:59:13] "DELETE /chat_room/test HTTP/1.1" 404 2085
-[03/Aug/2017 03:59:13] "GET /keyboard HTTP/1.1" 200 74
-[03/Aug/2017 03:59:15] "GET /keyboard HTTP/1.1" 200 74
-[03/Aug/2017 03:59:17] "POST /message HTTP/1.1" 200 233
-[03/Aug/2017 03:59:21] "POST /message HTTP/1.1" 200 230
-[03/Aug/2017 03:59:22] "POST /message HTTP/1.1" 200 235
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 03:59:09
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-[03/Aug/2017 03:59:34] "GET /keyboard HTTP/1.1" 200 74
-[03/Aug/2017 03:59:35] "POST /message HTTP/1.1" 200 233
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 03:59:32
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-[03/Aug/2017 03:59:51] "POST /message HTTP/1.1" 200 233
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 03:59:48
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 04:00:00
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 04:00:06
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 04:00:17
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 04:00:42
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 04:00:55
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 04:01:13
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 04:01:52
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 04:03:44
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Internal Server Error: /message
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/exception.py", line 41, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/workspace/simzi/server/views.py", line 40, in message
-    data = form(request)
-  File "/workspace/simzi/server/views.py", line 54, in form
-    "text" : add_str + content_str+rank,
-TypeError: Can't convert 'int' object to str implicitly
-[03/Aug/2017 04:03:53] "POST /message HTTP/1.1" 500 68754
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 04:03:49
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-[03/Aug/2017 04:04:14] "GET /keyboard HTTP/1.1" 200 74
+[03/Aug/2017 06:05:58] "DELETE /chat_room/test HTTP/1.1" 404 2085
+[03/Aug/2017 06:05:58] "GET /keyboard HTTP/1.1" 200 87
+[03/Aug/2017 06:06:02] "GET /keyboard HTTP/1.1" 200 87
 Internal Server Error: /message
 Traceback (most recent call last):
   File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/exception.py", line 41, in inner
@@ -562,639 +281,50 @@ Traceback (most recent call last):
   File "/workspace/simzi/server/views.py", line 40, in message
     data = form(request)
   File "/workspace/simzi/server/views.py", line 50, in form
-    rank = Member.objects.filter(name=content_str).rank
-AttributeError: 'QuerySet' object has no attribute 'rank'
-[03/Aug/2017 04:04:16] "POST /message HTTP/1.1" 500 68594
+    "text" : "You picked " +content_str+"("+member.nickname+")"+"\nRank "+ str(member.rank),
+NameError: name 'ᅳ드ᅲᄃᄀ' is not defined
+[03/Aug/2017 06:06:04] "POST /message HTTP/1.1" 500 68646
 Performing system checks...
 
 System check identified no issues (0 silenced).
-August 03, 2017 - 04:04:10
+August 03, 2017 - 06:05:47
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[03/Aug/2017 06:06:16] "GET /keyboard HTTP/1.1" 200 87
+[03/Aug/2017 06:06:18] "POST /message HTTP/1.1" 200 258
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 03, 2017 - 06:06:10
 Django version 1.11.4, using settings 'simzi.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
 Performing system checks...
 
 System check identified no issues (0 silenced).
-August 03, 2017 - 04:04:26
+August 03, 2017 - 06:06:47
 Django version 1.11.4, using settings 'simzi.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
 Performing system checks...
 
 System check identified no issues (0 silenced).
-August 03, 2017 - 04:05:26
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-[03/Aug/2017 04:05:45] "GET /keyboard HTTP/1.1" 200 74
-Internal Server Error: /message
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/exception.py", line 41, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/workspace/simzi/server/views.py", line 40, in message
-    data = form(request)
-  File "/workspace/simzi/server/views.py", line 54, in form
-    "text" : add_str + content_str+rank,
-TypeError: Can't convert 'int' object to str implicitly
-[03/Aug/2017 04:05:47] "POST /message HTTP/1.1" 500 68754
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 04:05:41
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-[03/Aug/2017 04:08:13] "GET /keyboard HTTP/1.1" 200 74
-Internal Server Error: /message
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/exception.py", line 41, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/workspace/simzi/server/views.py", line 40, in message
-    data = form(request)
-  File "/workspace/simzi/server/views.py", line 50, in form
-    rank = Member.objects.filter(name=content_str).get(rank)
-UnboundLocalError: local variable 'rank' referenced before assignment
-[03/Aug/2017 04:08:16] "POST /message HTTP/1.1" 500 68627
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 04:08:00
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f81ba124048>
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/autoreload.py", line 228, in wrapper
-    fn(*args, **kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/commands/runserver.py", line 125, in inner_run
-    self.check(display_num_errors=True)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 359, in check
-    include_deployment_checks=include_deployment_checks,
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 346, in _run_checks
-    return checks.run_checks(**kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/registry.py", line 81, in run_checks
-    new_errors = check(app_configs=app_configs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 16, in check_url_config
-    return check_resolver(resolver)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 26, in check_resolver
-    return check_method()
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 254, in check
-    for pattern in self.url_patterns:
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 405, in url_patterns
-    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 398, in urlconf_module
-    return import_module(self.urlconf_name)
-  File "/usr/lib/python3.4/importlib/__init__.py", line 109, in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-  File "<frozen importlib._bootstrap>", line 2254, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 2237, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 2226, in _find_and_load_unlocked
-  File "<frozen importlib._bootstrap>", line 1200, in _load_unlocked
-  File "<frozen importlib._bootstrap>", line 1129, in _exec
-  File "<frozen importlib._bootstrap>", line 1471, in exec_module
-  File "<frozen importlib._bootstrap>", line 321, in _call_with_frames_removed
-  File "/workspace/simzi/simzi/urls.py", line 3, in <module>
-    from server import views
-  File "/workspace/simzi/server/views.py", line 51
-    if content_str == Member.objects.get(name=content_str).name:
-    ^
-IndentationError: unexpected indent
-Performing system checks...
-
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 04:09:39
+August 03, 2017 - 06:07:03
 Django version 1.11.4, using settings 'simzi.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
 Performing system checks...
 
 System check identified no issues (0 silenced).
-August 03, 2017 - 04:11:08
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-[03/Aug/2017 04:11:25] "GET /keyboard HTTP/1.1" 200 74
-Internal Server Error: /message
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/exception.py", line 41, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/workspace/simzi/server/views.py", line 40, in message
-    data = form(request)
-  File "/workspace/simzi/server/views.py", line 50, in form
-    rank = Member.objects.get.filter(name=content_str).rank
-AttributeError: 'function' object has no attribute 'filter'
-[03/Aug/2017 04:11:27] "POST /message HTTP/1.1" 500 68610
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 04:11:23
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7fa2f19c8048>
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/autoreload.py", line 228, in wrapper
-    fn(*args, **kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/commands/runserver.py", line 125, in inner_run
-    self.check(display_num_errors=True)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 359, in check
-    include_deployment_checks=include_deployment_checks,
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 346, in _run_checks
-    return checks.run_checks(**kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/registry.py", line 81, in run_checks
-    new_errors = check(app_configs=app_configs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 16, in check_url_config
-    return check_resolver(resolver)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 26, in check_resolver
-    return check_method()
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 254, in check
-    for pattern in self.url_patterns:
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 405, in url_patterns
-    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 398, in urlconf_module
-    return import_module(self.urlconf_name)
-  File "/usr/lib/python3.4/importlib/__init__.py", line 109, in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-  File "<frozen importlib._bootstrap>", line 2254, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 2237, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 2226, in _find_and_load_unlocked
-  File "<frozen importlib._bootstrap>", line 1200, in _load_unlocked
-  File "<frozen importlib._bootstrap>", line 1129, in _exec
-  File "<frozen importlib._bootstrap>", line 1471, in exec_module
-  File "<frozen importlib._bootstrap>", line 321, in _call_with_frames_removed
-  File "/workspace/simzi/simzi/urls.py", line 3, in <module>
-    from server import views
-  File "/workspace/simzi/server/views.py", line 53
-    if content_str == Member.objects.get(name=content_str).name:
-    ^
-IndentationError: unexpected indent
-Performing system checks...
-
-Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7fde38933048>
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/autoreload.py", line 228, in wrapper
-    fn(*args, **kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/commands/runserver.py", line 125, in inner_run
-    self.check(display_num_errors=True)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 359, in check
-    include_deployment_checks=include_deployment_checks,
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 346, in _run_checks
-    return checks.run_checks(**kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/registry.py", line 81, in run_checks
-    new_errors = check(app_configs=app_configs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 16, in check_url_config
-    return check_resolver(resolver)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 26, in check_resolver
-    return check_method()
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 254, in check
-    for pattern in self.url_patterns:
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 405, in url_patterns
-    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 398, in urlconf_module
-    return import_module(self.urlconf_name)
-  File "/usr/lib/python3.4/importlib/__init__.py", line 109, in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-  File "<frozen importlib._bootstrap>", line 2254, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 2237, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 2226, in _find_and_load_unlocked
-  File "<frozen importlib._bootstrap>", line 1200, in _load_unlocked
-  File "<frozen importlib._bootstrap>", line 1129, in _exec
-  File "<frozen importlib._bootstrap>", line 1471, in exec_module
-  File "<frozen importlib._bootstrap>", line 321, in _call_with_frames_removed
-  File "/workspace/simzi/simzi/urls.py", line 3, in <module>
-    from server import views
-  File "/workspace/simzi/server/views.py", line 53
-    if content_str == Member.objects.get(name=content_str).name:
-    ^
-IndentationError: unexpected indent
-Performing system checks...
-
-Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f43926dd048>
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/autoreload.py", line 228, in wrapper
-    fn(*args, **kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/commands/runserver.py", line 125, in inner_run
-    self.check(display_num_errors=True)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 359, in check
-    include_deployment_checks=include_deployment_checks,
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 346, in _run_checks
-    return checks.run_checks(**kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/registry.py", line 81, in run_checks
-    new_errors = check(app_configs=app_configs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 16, in check_url_config
-    return check_resolver(resolver)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 26, in check_resolver
-    return check_method()
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 254, in check
-    for pattern in self.url_patterns:
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 405, in url_patterns
-    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 398, in urlconf_module
-    return import_module(self.urlconf_name)
-  File "/usr/lib/python3.4/importlib/__init__.py", line 109, in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-  File "<frozen importlib._bootstrap>", line 2254, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 2237, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 2226, in _find_and_load_unlocked
-  File "<frozen importlib._bootstrap>", line 1200, in _load_unlocked
-  File "<frozen importlib._bootstrap>", line 1129, in _exec
-  File "<frozen importlib._bootstrap>", line 1471, in exec_module
-  File "<frozen importlib._bootstrap>", line 321, in _call_with_frames_removed
-  File "/workspace/simzi/simzi/urls.py", line 3, in <module>
-    from server import views
-  File "/workspace/simzi/server/views.py", line 53
-    if content_str == Member.objects.get(name=content_str).name:
-    ^
-IndentationError: unexpected indent
-Performing system checks...
-
-Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f28a2b4c048>
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/autoreload.py", line 228, in wrapper
-    fn(*args, **kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/commands/runserver.py", line 125, in inner_run
-    self.check(display_num_errors=True)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 359, in check
-    include_deployment_checks=include_deployment_checks,
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 346, in _run_checks
-    return checks.run_checks(**kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/registry.py", line 81, in run_checks
-    new_errors = check(app_configs=app_configs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 16, in check_url_config
-    return check_resolver(resolver)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 26, in check_resolver
-    return check_method()
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 254, in check
-    for pattern in self.url_patterns:
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 405, in url_patterns
-    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 398, in urlconf_module
-    return import_module(self.urlconf_name)
-  File "/usr/lib/python3.4/importlib/__init__.py", line 109, in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-  File "<frozen importlib._bootstrap>", line 2254, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 2237, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 2226, in _find_and_load_unlocked
-  File "<frozen importlib._bootstrap>", line 1200, in _load_unlocked
-  File "<frozen importlib._bootstrap>", line 1129, in _exec
-  File "<frozen importlib._bootstrap>", line 1471, in exec_module
-  File "<frozen importlib._bootstrap>", line 321, in _call_with_frames_removed
-  File "/workspace/simzi/simzi/urls.py", line 3, in <module>
-    from server import views
-  File "/workspace/simzi/server/views.py", line 54
-    if content_str == Member.objects.get(name=content_str).name:
-    ^
-IndentationError: unexpected indent
-Performing system checks...
-
-Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f1df8695048>
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/autoreload.py", line 228, in wrapper
-    fn(*args, **kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/commands/runserver.py", line 125, in inner_run
-    self.check(display_num_errors=True)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 359, in check
-    include_deployment_checks=include_deployment_checks,
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 346, in _run_checks
-    return checks.run_checks(**kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/registry.py", line 81, in run_checks
-    new_errors = check(app_configs=app_configs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 16, in check_url_config
-    return check_resolver(resolver)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 26, in check_resolver
-    return check_method()
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 254, in check
-    for pattern in self.url_patterns:
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 405, in url_patterns
-    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 398, in urlconf_module
-    return import_module(self.urlconf_name)
-  File "/usr/lib/python3.4/importlib/__init__.py", line 109, in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-  File "<frozen importlib._bootstrap>", line 2254, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 2237, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 2226, in _find_and_load_unlocked
-  File "<frozen importlib._bootstrap>", line 1200, in _load_unlocked
-  File "<frozen importlib._bootstrap>", line 1129, in _exec
-  File "<frozen importlib._bootstrap>", line 1471, in exec_module
-  File "<frozen importlib._bootstrap>", line 321, in _call_with_frames_removed
-  File "/workspace/simzi/simzi/urls.py", line 3, in <module>
-    from server import views
-  File "/workspace/simzi/server/views.py", line 54
-    if content_str == Member.objects.get(name=content_str).name:
-    ^
-IndentationError: unexpected indent
-Performing system checks...
-
-Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f391b089048>
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/autoreload.py", line 228, in wrapper
-    fn(*args, **kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/commands/runserver.py", line 125, in inner_run
-    self.check(display_num_errors=True)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 359, in check
-    include_deployment_checks=include_deployment_checks,
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 346, in _run_checks
-    return checks.run_checks(**kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/registry.py", line 81, in run_checks
-    new_errors = check(app_configs=app_configs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 16, in check_url_config
-    return check_resolver(resolver)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 26, in check_resolver
-    return check_method()
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 254, in check
-    for pattern in self.url_patterns:
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 405, in url_patterns
-    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 398, in urlconf_module
-    return import_module(self.urlconf_name)
-  File "/usr/lib/python3.4/importlib/__init__.py", line 109, in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-  File "<frozen importlib._bootstrap>", line 2254, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 2237, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 2226, in _find_and_load_unlocked
-  File "<frozen importlib._bootstrap>", line 1200, in _load_unlocked
-  File "<frozen importlib._bootstrap>", line 1129, in _exec
-  File "<frozen importlib._bootstrap>", line 1471, in exec_module
-  File "<frozen importlib._bootstrap>", line 321, in _call_with_frames_removed
-  File "/workspace/simzi/simzi/urls.py", line 3, in <module>
-    from server import views
-  File "/workspace/simzi/server/views.py", line 55
-    if content_str == member:
-    ^
-IndentationError: unexpected indent
-Performing system checks...
-
-Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f33c7624048>
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/autoreload.py", line 228, in wrapper
-    fn(*args, **kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/commands/runserver.py", line 125, in inner_run
-    self.check(display_num_errors=True)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 359, in check
-    include_deployment_checks=include_deployment_checks,
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 346, in _run_checks
-    return checks.run_checks(**kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/registry.py", line 81, in run_checks
-    new_errors = check(app_configs=app_configs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 16, in check_url_config
-    return check_resolver(resolver)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 26, in check_resolver
-    return check_method()
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 254, in check
-    for pattern in self.url_patterns:
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 405, in url_patterns
-    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 398, in urlconf_module
-    return import_module(self.urlconf_name)
-  File "/usr/lib/python3.4/importlib/__init__.py", line 109, in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-  File "<frozen importlib._bootstrap>", line 2254, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 2237, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 2226, in _find_and_load_unlocked
-  File "<frozen importlib._bootstrap>", line 1200, in _load_unlocked
-  File "<frozen importlib._bootstrap>", line 1129, in _exec
-  File "<frozen importlib._bootstrap>", line 1471, in exec_module
-  File "<frozen importlib._bootstrap>", line 321, in _call_with_frames_removed
-  File "/workspace/simzi/simzi/urls.py", line 3, in <module>
-    from server import views
-  File "/workspace/simzi/server/views.py", line 55
-    if content_str == member.name:
-    ^
-IndentationError: unexpected indent
-Performing system checks...
-
-Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7fa5f368d048>
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/autoreload.py", line 228, in wrapper
-    fn(*args, **kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/commands/runserver.py", line 125, in inner_run
-    self.check(display_num_errors=True)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 359, in check
-    include_deployment_checks=include_deployment_checks,
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 346, in _run_checks
-    return checks.run_checks(**kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/registry.py", line 81, in run_checks
-    new_errors = check(app_configs=app_configs)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 16, in check_url_config
-    return check_resolver(resolver)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/checks/urls.py", line 26, in check_resolver
-    return check_method()
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 254, in check
-    for pattern in self.url_patterns:
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 405, in url_patterns
-    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/functional.py", line 35, in __get__
-    res = instance.__dict__[self.name] = self.func(instance)
-  File "/usr/local/lib/python3.4/dist-packages/django/urls/resolvers.py", line 398, in urlconf_module
-    return import_module(self.urlconf_name)
-  File "/usr/lib/python3.4/importlib/__init__.py", line 109, in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-  File "<frozen importlib._bootstrap>", line 2254, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 2237, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 2226, in _find_and_load_unlocked
-  File "<frozen importlib._bootstrap>", line 1200, in _load_unlocked
-  File "<frozen importlib._bootstrap>", line 1129, in _exec
-  File "<frozen importlib._bootstrap>", line 1471, in exec_module
-  File "<frozen importlib._bootstrap>", line 321, in _call_with_frames_removed
-  File "/workspace/simzi/simzi/urls.py", line 3, in <module>
-    from server import views
-  File "/workspace/simzi/server/views.py", line 55
-    if content_str == member.name:
-    ^
-IndentationError: unexpected indent
-Performing system checks...
-
-[03/Aug/2017 04:16:01] "GET /keyboard HTTP/1.1" 200 74
-Internal Server Error: /message
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/exception.py", line 41, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/workspace/simzi/server/views.py", line 40, in message
-    data = form(request)
-  File "/workspace/simzi/server/views.py", line 57, in form
-    "text" : add_str + content_str+rank,
-TypeError: Can't convert 'int' object to str implicitly
-[03/Aug/2017 04:16:04] "POST /message HTTP/1.1" 500 68936
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 04:15:51
+August 03, 2017 - 06:07:20
 Django version 1.11.4, using settings 'simzi.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
 Performing system checks...
 
 System check identified no issues (0 silenced).
-August 03, 2017 - 04:16:27
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-[03/Aug/2017 04:16:40] "GET /keyboard HTTP/1.1" 200 74
-Internal Server Error: /message
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/exception.py", line 41, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/workspace/simzi/server/views.py", line 40, in message
-    data = form(request)
-  File "/workspace/simzi/server/views.py", line 58, in form
-    "text" : add_str + content_str+rank,
-TypeError: Can't convert 'int' object to str implicitly
-[03/Aug/2017 04:16:42] "POST /message HTTP/1.1" 500 68895
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 04:16:39
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 04:16:51
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 04:17:21
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 04:17:26
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-[03/Aug/2017 04:17:32] "GET /keyboard HTTP/1.1" 200 74
-[03/Aug/2017 04:17:35] "POST /message HTTP/1.1" 200 233
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 04:17:32
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 04:17:47
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 04:17:54
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-[03/Aug/2017 04:18:02] "GET /keyboard HTTP/1.1" 200 74
-Internal Server Error: /message
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/exception.py", line 41, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/base.py", line 187, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/handlers/base.py", line 185, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/workspace/simzi/server/views.py", line 40, in message
-    data = form(request)
-  File "/workspace/simzi/server/views.py", line 55, in form
-    "text" : add_str + content_str + rank,
-TypeError: Can't convert 'int' object to str implicitly
-[03/Aug/2017 04:18:04] "POST /message HTTP/1.1" 500 68880
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 04:18:01
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 04:19:16
-Django version 1.11.4, using settings 'simzi.settings'
-Starting development server at http://0.0.0.0:80/
-Quit the server with CONTROL-C.
-[03/Aug/2017 04:19:35] "GET /keyboard HTTP/1.1" 200 74
-[03/Aug/2017 04:19:37] "POST /message HTTP/1.1" 200 234
-Performing system checks...
-
-System check identified no issues (0 silenced).
-August 03, 2017 - 04:19:34
+August 03, 2017 - 06:07:28
 Django version 1.11.4, using settings 'simzi.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
