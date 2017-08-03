@@ -328,3 +328,17 @@ August 03, 2017 - 06:07:28
 Django version 1.11.4, using settings 'simzi.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 03, 2017 - 06:07:43
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 03, 2017 - 06:07:55
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
