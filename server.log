@@ -1,17 +1,134 @@
+Not Found: /friend/test
+[03/Aug/2017 03:34:30] "DELETE /friend/test HTTP/1.1" 404 2076
+Not Found: /friend
+[03/Aug/2017 03:34:30] "POST /friend HTTP/1.1" 404 2059
+Not Found: /chat_room/test
+[03/Aug/2017 03:34:30] "DELETE /chat_room/test HTTP/1.1" 404 2085
+[03/Aug/2017 03:34:31] "GET /keyboard HTTP/1.1" 200 74
 Performing system checks...
 
 System check identified no issues (0 silenced).
-August 03, 2017 - 02:11:32
+August 03, 2017 - 03:34:30
 Django version 1.11.4, using settings 'simzi.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
 Not Found: /friend/test
-[03/Aug/2017 02:11:43] "DELETE /friend/test HTTP/1.1" 404 2076
+[03/Aug/2017 03:34:48] "DELETE /friend/test HTTP/1.1" 404 2076
 Not Found: /friend
-[03/Aug/2017 02:11:43] "POST /friend HTTP/1.1" 404 2059
+[03/Aug/2017 03:34:48] "POST /friend HTTP/1.1" 404 2059
 Not Found: /chat_room/test
-[03/Aug/2017 02:11:43] "DELETE /chat_room/test HTTP/1.1" 404 2085
-[03/Aug/2017 02:11:43] "GET /keyboard HTTP/1.1" 200 74
-[03/Aug/2017 02:11:47] "POST /message HTTP/1.1" 200 230
-[03/Aug/2017 02:11:48] "POST /message HTTP/1.1" 200 233
-[03/Aug/2017 02:13:48] "POST /message HTTP/1.1" 200 233
+[03/Aug/2017 03:34:49] "DELETE /chat_room/test HTTP/1.1" 404 2085
+[03/Aug/2017 03:34:49] "GET /keyboard HTTP/1.1" 200 74
+[03/Aug/2017 03:34:55] "GET /keyboard HTTP/1.1" 200 74
+[03/Aug/2017 03:34:57] "POST /message HTTP/1.1" 200 233
+[03/Aug/2017 03:34:58] "POST /message HTTP/1.1" 200 230
+[03/Aug/2017 03:34:59] "POST /message HTTP/1.1" 200 235
+[03/Aug/2017 03:35:01] "POST /message HTTP/1.1" 200 165
+[03/Aug/2017 03:35:03] "POST /message HTTP/1.1" 200 233
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 03, 2017 - 03:34:48
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[03/Aug/2017 03:35:34] "POST /message HTTP/1.1" 200 233
+[03/Aug/2017 03:35:36] "POST /message HTTP/1.1" 200 230
+[03/Aug/2017 03:36:38] "POST /message HTTP/1.1" 200 233
+[03/Aug/2017 03:36:40] "POST /message HTTP/1.1" 200 230
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 03, 2017 - 03:35:33
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 03, 2017 - 03:36:42
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Not Found: /friend/test
+[03/Aug/2017 03:36:53] "DELETE /friend/test HTTP/1.1" 404 2076
+Not Found: /friend
+[03/Aug/2017 03:36:53] "POST /friend HTTP/1.1" 404 2059
+Not Found: /chat_room/test
+[03/Aug/2017 03:36:53] "DELETE /chat_room/test HTTP/1.1" 404 2085
+[03/Aug/2017 03:36:53] "GET /keyboard HTTP/1.1" 200 74
+[03/Aug/2017 03:37:36] "GET /keyboard HTTP/1.1" 200 74
+[03/Aug/2017 03:37:37] "POST /message HTTP/1.1" 200 233
+[03/Aug/2017 03:37:38] "POST /message HTTP/1.1" 200 230
+[03/Aug/2017 03:37:39] "POST /message HTTP/1.1" 200 235
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 03, 2017 - 03:36:49
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 03, 2017 - 03:38:20
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 03, 2017 - 03:38:59
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 03, 2017 - 03:39:18
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[03/Aug/2017 03:43:10] "GET /keyboard HTTP/1.1" 200 74
+[03/Aug/2017 03:43:12] "POST /message HTTP/1.1" 200 233
+[03/Aug/2017 03:43:14] "POST /message HTTP/1.1" 200 230
+[03/Aug/2017 03:43:15] "POST /message HTTP/1.1" 200 235
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 03, 2017 - 03:43:08
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[03/Aug/2017 03:43:32] "POST /message HTTP/1.1" 200 233
+Not Found: /friend/test
+[03/Aug/2017 03:43:35] "DELETE /friend/test HTTP/1.1" 404 2076
+Not Found: /friend
+[03/Aug/2017 03:43:35] "POST /friend HTTP/1.1" 404 2059
+Not Found: /chat_room/test
+[03/Aug/2017 03:43:35] "DELETE /chat_room/test HTTP/1.1" 404 2085
+[03/Aug/2017 03:43:35] "GET /keyboard HTTP/1.1" 200 74
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 03, 2017 - 03:43:20
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 03, 2017 - 03:43:42
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[03/Aug/2017 03:45:04] "POST /message HTTP/1.1" 200 230
+[03/Aug/2017 03:45:05] "POST /message HTTP/1.1" 200 253
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 03, 2017 - 03:45:03
+Django version 1.11.4, using settings 'simzi.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[03/Aug/2017 03:46:02] "POST /message HTTP/1.1" 200 253

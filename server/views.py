@@ -48,7 +48,8 @@ def wannaone(request):
 	if str == u"워너원":
 		add_str = "All I Wanna Do! "
 	else:
-		if str == Member.objects.filter(name = "강다니엘"):
+		#add_str = "You picked "
+		if str == Member.objects.get(name="강다니엘").name:
 			add_str = "실행이 잘 되었습니다. "
 		else:
 			add_str = "You picked "
