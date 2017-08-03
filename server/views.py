@@ -3,6 +3,7 @@ import json
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
+from server.models import Member
 
 # Create your views here.
 def keyboard(request):
@@ -13,22 +14,16 @@ def keyboard(request):
 	
 	return HttpResponse(json.dumps(data, ensure_ascii=False), content_type="application/json; encoding=utf-8")
 
-
 @csrf_exempt
 def message(request):
+	str = content(request)
 	
-	body_unicode = request.body.decode('utf-8')
-	body = json.loads(body_unicode)
-	content = body['content']
-	
-	data = pick(request)
-	
-	if content == u"워너원":
+	if str == u"워너원":
 		data = wannaone(request)
-	elif content == u"처음으로":
+	elif str == u"처음으로":
 		data = {
 			"message": {
-				"text" : "당신의 소년을 선택해주세요!",
+				"text" : "PRODUCE 101\n"+"당신의 소년을 선택해주세요!",
 			},
 			"keyboard": {
 				"type": "buttons",
@@ -36,35 +31,34 @@ def message(request):
 			}
 		}
 	else:
-		data = pick(request)
+		data = wannaone(request)
 	
 	return HttpResponse(json.dumps(data, ensure_ascii=False), content_type="application/json; encoding=utf-8")
 
-def pick(request):
+
+def content(request):
 	body_unicode = request.body.decode('utf-8')
 	body = json.loads(body_unicode)
 	content = body['content']
-	
-	return {
-		"message": {
-				"text" : content+" pick!",
+	return content
+
+
+def wannaone(request):
+	str = content(request)
+	if str == u"워너원":
+		add_str = "All I Wanna Do! "
+	else:
+		if str == Member.objects.filter(name = "강다니엘"):
+			add_str = "실행이 잘 되었습니다. "
+		else:
+			add_str = "You picked "
+		
+	return	{"message": {
+				"text" : add_str + str,
 				"message_button": {
 					"label": "WANNAONE GO!",
 					"url": "http://www.wannaonego.com"
 				}
-			},
-			"keyboard": {
-				"type": "buttons",
-				"buttons": ["강다니엘", "옹성우", "워너원", "처음으로"]
-			}
-	}
-
-def wannaone(request):
-	body_unicode = request.body.decode('utf-8')
-	body = json.loads(body_unicode)
-	content = body['content']
-	return	{"message": {
-				"text" : "All I Wanna Do! " + content
 			},
 			"keyboard": {
 				"type": "buttons",
