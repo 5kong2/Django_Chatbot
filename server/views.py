@@ -6,6 +6,13 @@ from django.views.decorators.csrf import csrf_exempt
 from server.models import Member
 
 # Create your views here.
+def content(request):
+	body_unicode = request.body.decode('utf-8')
+	body = json.loads(body_unicode)
+	content = body['content']
+	return content
+
+
 def keyboard(request):
 	data = {
 		"type": "buttons",
@@ -14,13 +21,12 @@ def keyboard(request):
 	
 	return HttpResponse(json.dumps(data, ensure_ascii=False), content_type="application/json; encoding=utf-8")
 
+
 @csrf_exempt
 def message(request):
-	str = content(request)
+	content_str = content(request)
 	
-	if str == u"워너원":
-		data = wannaone(request)
-	elif str == u"처음으로":
+	if content_str == u"처음으로":
 		data = {
 			"message": {
 				"text" : "PRODUCE 101\n"+"당신의 소년을 선택해주세요!",
@@ -31,31 +37,22 @@ def message(request):
 			}
 		}
 	else:
-		data = wannaone(request)
+		data = form(request)
 	
 	return HttpResponse(json.dumps(data, ensure_ascii=False), content_type="application/json; encoding=utf-8")
 
 
-def content(request):
-	body_unicode = request.body.decode('utf-8')
-	body = json.loads(body_unicode)
-	content = body['content']
-	return content
-
-
-def wannaone(request):
-	str = content(request)
-	if str == u"워너원":
-		add_str = "All I Wanna Do! "
+def form(request):
+	content_str = content(request)
+	member = Member.objects.get(name=content_str)
+	
+	if content_str == member.name:
+		add_str = "You picked "
+		rank = member.rank
 	else:
-		#add_str = "You picked "
-		if str == Member.objects.get(name="강다니엘").name:
-			add_str = "실행이 잘 되었습니다. "
-		else:
-			add_str = "You picked "
-		
+		add_str = "All I Wanna Do! "
 	return	{"message": {
-				"text" : add_str + str,
+				"text" : add_str + content_str + str(rank),
 				"message_button": {
 					"label": "WANNAONE GO!",
 					"url": "http://www.wannaonego.com"
